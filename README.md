@@ -1,2 +1,4 @@
 # Schema
+
+[![Join the chat at https://gitter.im/FMeat/Schema](https://badges.gitter.im/FMeat/Schema.svg)](https://gitter.im/FMeat/Schema?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Describes FMeat Data Formats
