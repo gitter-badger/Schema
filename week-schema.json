@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "title": "Week schema.",
+  "description": "An explanation about the purpose of this instance.",
+  "properties": {
+    "number": {
+      "type": "integer",
+      "multipleOf": 1,
+      "maximum": 52,
+      "minimum": 1,
+      "title": "Number schema.",
+      "description": "An explanation about the purpose of this instance."
+    },
+    "days": {
+      "type": "array",
+      "uniqueItems": false,
+      "title": "Days schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "items": {
+        "type": "object",
+        "title": "4 schema.",
+        "description": "An explanation about the purpose of this instance.",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date",
+            "title": "Date schema.",
+            "description": "An explanation about the purpose of this instance."
+          },
+          "dishes": {
+            "type": "array",
+            "uniqueItems": false,
+            "title": "Dishes schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "items": {
+              "type": "object",
+              "title": "2 schema.",
+              "description": "An explanation about the purpose of this instance.",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "title": "Name schema.",
+                  "description": "An explanation about the purpose of this instance."
+                },
+                "price": {
+                  "type": "number",
+                  "minimum": 0,
+                  "title": "Price schema.",
+                  "description": "An explanation about the purpose of this instance."
+                }
+              },
+              "required": [
+                "name",
+                "price"
+              ]
+            }
+          }
+        },
+        "required": [
+          "date",
+          "dishes"
+        ]
+      }
+    },
+    "hash": {
+      "type": "string",
+      "title": "Hash schema.",
+      "description": "An explanation about the purpose of this instance."
+    }
+  },
+  "required": [
+    "number",
+    "days"
+  ]
+}
